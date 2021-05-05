@@ -13,18 +13,12 @@ import log.NameSurnameLogger;
 public class Main {
 
 	public static void main(String[] args) {
-		/*
-		 * Player player1 = new Player(1, "Göksu", "Yýlmaz", 26, "99999999999",
-		 * "01.09.1994");
-		 * 
-		 * PlayerManager playerManager = new PlayerManager();
-		 * playerManager.add(player1);
-		 */
+		
 		
        Logger[] loggers = {new IdentityDateLogger(), new NameSurnameLogger()};
 		PlayerManager playerManager = new PlayerManager(loggers);
-		Player player1 = new Player(1,"Göksu","Yýlmaz",26,"11122233344","01.09.1993");
-		Player player2 = new Player(2,"Hikmet","Yýlmaz",25,"15553337772","01.09.1975");
+		Player player1 = new Player(1,"GÃ¶ksu","YÃ½lmaz",26,"11122233344","01.09.1993");
+		Player player2 = new Player(2,"Hikmet","YÃ½lmaz",25,"15553337772","01.09.1975");
 		playerManager.add(player1);
 		System.out.println(" ");
 		playerManager.add(player2);
